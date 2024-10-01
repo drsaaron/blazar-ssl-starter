@@ -5,6 +5,7 @@
 package com.blazartech.blazarsslstarter;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.PropertySource;
  * @author scott
  */
 @Configuration
+@Profile("https")
 @PropertySource("classpath:ssl.properties")
 public class SSLConfiguration {
     
